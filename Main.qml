@@ -45,7 +45,7 @@ Pane {
     palette.window: config.BackgroundColor
 
     font.family: config.Font
-    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
+    font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 70)
     focus: true
 
     property bool leftleft: config.HaveFormBackground == "true" &&
@@ -89,9 +89,9 @@ Pane {
             id: formBackground
             anchors.fill: form
             anchors.centerIn: form
-            color: root.palette.window
+            color: "#222222"
             visible: config.HaveFormBackground == "true" ? true : false
-            opacity: config.PartialBlur == "true" ? 0.3 : 1
+            opacity: 0.6
             z: 1
         }
 
@@ -99,7 +99,7 @@ Pane {
             id: form
 
             height: virtualKeyboard.state == "visible" ? parent.height - virtualKeyboard.implicitHeight : parent.height
-            width: parent.width / 2.5
+            width: parent.width / 3
             anchors.horizontalCenter: config.FormPosition == "center" ? parent.horizontalCenter : undefined
             anchors.left: config.FormPosition == "left" ? parent.left : undefined
             anchors.right: config.FormPosition == "right" ? parent.right : undefined
