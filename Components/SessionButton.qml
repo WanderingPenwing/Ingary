@@ -91,6 +91,7 @@ Item {
             anchors.left: parent.left
             anchors.leftMargin: 3
             font.pointSize: root.font.pointSize * 0.8
+            font.family: config.Font
             Keys.onReleased: parent.popup.open()
         }
 

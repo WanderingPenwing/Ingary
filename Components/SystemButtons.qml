@@ -44,6 +44,7 @@ RowLayout {
 
         RoundButton {
             text: modelData[1]
+            font.family: config.Font
             font.pointSize: root.font.pointSize * 0.8
             Layout.alignment: Qt.AlignHCenter
             icon.source: modelData ? Qt.resolvedUrl("../Assets/" + modelData[0] + ".svgz") : ""

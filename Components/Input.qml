@@ -75,6 +75,7 @@ Column {
                     text: model.name
                     font.pointSize: root.font.pointSize * 0.8
                     font.capitalization: Font.Capitalize
+                    font.family: config.Font
                     color: selectUser.highlightedIndex === index ? root.palette.highlight.hslLightness >= 0.7 ? "#16161E" : "white" : root.palette.window.hslLightness >= 0.8 ? root.palette.highlight.hslLightness >= 0.8 ? "#16161E" : root.palette.highlight : "white"
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -314,6 +315,7 @@ Column {
                 horizontalAlignment: Text.AlignLeft
                 anchors.left: indicator.right
                 anchors.leftMargin: indicator.width / 2
+                font.family: config.Font
                 font.pointSize: root.font.pointSize * 0.8
                 color: root.palette.text
             }
@@ -470,6 +472,7 @@ Column {
                 text: parent.text
                 color: config.OverrideLoginButtonTextColor != "" ? config.OverrideLoginButtonTextColor : root.palette.highlight.hslLightness >= 0.7 ? "#16161E" : "white"
                 font.pointSize: root.font.pointSize
+                font.family: config.Font
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 opacity: 0.5
