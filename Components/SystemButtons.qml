@@ -45,7 +45,7 @@ RowLayout {
         RoundButton {
             text: modelData[1]
             font.family: config.Font
-            font.pointSize: root.font.pointSize * 2
+            font.pointSize: root.font.pointSize * 1.5
             Layout.alignment: Qt.AlignHCenter
             display: AbstractButton.TextUnderIcon
             visible: config.ForceHideSystemButtons != "true" && modelData[2]
