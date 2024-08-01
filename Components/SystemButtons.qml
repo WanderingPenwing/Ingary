@@ -45,11 +45,8 @@ RowLayout {
         RoundButton {
             text: modelData[1]
             font.family: config.Font
-            font.pointSize: root.font.pointSize * 4
+            font.pointSize: root.font.pointSize * 1
             Layout.alignment: Qt.AlignHCenter
-//            icon.source: modelData ? Qt.resolvedUrl("../Assets/" + modelData[0] + ".svgz") : ""
-//            icon.height: 2 * Math.round((root.font.pointSize * 3) / 2)
-//            icon.width: 2 * Math.round((root.font.pointSize * 3) / 2)
             display: AbstractButton.TextUnderIcon
             visible: config.ForceHideSystemButtons != "true" && modelData[2]
             hoverEnabled: true
